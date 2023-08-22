@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tikks India – Redefining Taste!</title>
+    <link rel="shortcut icon" href="./img/tikks-logo-small.png" type="image/x-icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css"  rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .navbar-scroll {
+  background-color: black;
+}
+
+    </style>
+</head>
+<body class=" mx-auto ">
+    <!-- navbar -->
+    <header>
+      <nav id="navbar" class="fixed w-full z-20 top-0 left-0 mx-auto">
+        <div class="container mx-auto flex items-center justify-between">
+          <a href="/" class="focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:top-7 z-50 hover:opacity-75 transition-opacity" aria-label="Go to homepage">
+            <img src="./img/tikks-logo-small.png" width="200" class="w-20 md:w-25 lg:w-32" alt="Home Smart Logo">
+          </a>
+          <button id="menu" class="lg:hidden focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-600 transition-colors bg-transparent" aria-expanded="false" aria-label="Open Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 sm:bg-gray-200 rounded p-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+          <div role="menubar" class="hidden flex-col gap-4 absolute z-40 right-0 left-0 top-1 text-amber-400 xl:text-center text-lg p-6 items-center lg:flex lg:flex-row lg:static lg:w-full font-bold sm:bg-gray-200 lg:bg-transparent">
+
+            <a role="menuitem" class="py-1 px-6 dark:text-amber-400 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors text-amber-400 font-bold" href="/">Home</a>
+            <a role="menuitem" class="py-1 px-6 dark:text-amber-4000 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors text-amber-400 font-bold" href="/">About Us</a>
+            <a role="menuitem" class="py-1 px-6 dark:text-amber-400 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 hover:text-neutral-600 transition-colors lg:mr-auto text-amber-400 font-bold" href="/">Products</a>
+            <a role="menuitem" class="py-2 px-6 hover:-none transition- focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400 lg:ml-auto font-bold text-amber-400 " href="/">Contact Us</a>
+            <a role="menuitem" class="py-2 px-6 hover:-none transition- focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400 font-bold text-amber-400 " href="/">Download Catalog</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    
+      
+
+<main>
+  <!-- Slider -->
+  <div id="controls-carousel" class="relative z-0 w-full" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 md:h-screen lg:h-screen overflow-hidden">
+      <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="./img/hero-bg-1.jpg" class="absolute block object-cover w-full h-full top-0 left-0" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+        <img src="./img/hero-bg-2.jpg" class="absolute block object-cover w-full h-full top-0 left-0" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img src="./img/hero-bg-3.jpg" class="absolute block object-cover w-full h-full top-0 left-0" alt="...">
+      </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <svg aria-hidden="true" class="w-6 h-6 text-white dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
+  </div>
+  
+
+
+
+    <!-- Product Category -->
+  
+    
+    <section class="bg-center bg-no-repeat bg-[url('https://www.tikksindia.com/wp-content/uploads/2020/01/foodtruck-sectionbg1.png')] bg-blend-multiply">
+      <div class="px-4 mx-auto max-w-screen-xl text-center md:py-10 lg:py-20">
+        <h1 class="my-20 text-2xl font-extrabold tracking-tight leading-none text-black md:text-5xl lg:text-6xl">OUR PRODUCT CATEGORIES</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          <div class="w-full max-w-sm rounded-lg">
+            <div class="flex flex-col items-center pb-10">
+              <img class="mb-3 rounded-full -lg" src="./img/cat-1.png" width="180" height="150" alt="Mayonnaise">
+              <h5 class="mb-1 text-lg font-bold text-black">Mayonnaise</h5>
+            </div>
+          </div>
+          <!-- Repeat the same structure for the remaining product categories -->
+          <div class="w-full max-w-sm rounded-lg">
+            <div class="flex flex-col items-center pb-10">
+              <img class="mb-3 rounded-full -lg" src="./img/cat-2.png" width="180" height="150" alt="Mayonnaise">
+              <h5 class="mb-1 text-lg font-bold text-black">Mayonnaise</h5>
+            </div>
+          </div>
+          <div class="w-full max-w-sm rounded-lg">
+            <div class="flex flex-col items-center pb-10">
+              <img class="mb-3 rounded-full -lg" src="./img/cat-3.png" width="180" height="150" alt="Mayonnaise">
+              <h5 class="mb-1 text-lg font-bold text-black">Mayonnaise</h5>
+            </div>
+          </div>
+          <div class="w-full max-w-sm rounded-lg">
+            <div class="flex flex-col items-center pb-10">
+              <img class="mb-3 rounded-full -lg" src="./img/cat-4.png" width="180" height="150" alt="Mayonnaise">
+              <h5 class="mb-1 text-lg font-bold text-black">Mayonnaise</h5>
+            </div>
+          </div>
+          <div class="w-full max-w-sm rounded-lg">
+            <div class="flex flex-col items-center pb-10">
+              <img class="mb-3 rounded-full -lg" src="./img/cat-5.png" width="180" height="150" alt="Mayonnaise">
+              <h5 class="mb-1 text-lg font-bold text-black">Mayonnaise</h5>
+            </div>
+          </div>
+          <div class="w-full max-w-sm rounded-lg">
+            <div class="flex flex-col items-center pb-10">
+              <img class="mb-3 rounded-full -lg" src="./img/cat-6.png" width="180" height="150" alt="Mayonnaise">
+              <h5 class="mb-1 text-lg font-bold text-black">Mayonnaise</h5>
+            </div>
+          </div>
+          <div class="w-full max-w-sm rounded-lg">
+            <div class="flex flex-col items-center pb-10">
+              <img class="mb-3 rounded-full -lg" src="./img/cat-7.png" width="180" height="150" alt="Mayonnaise">
+              <h5 class="mb-1 text-lg font-bold text-black">Mayonnaise</h5>
+            </div>
+          </div>
+          <div class="w-full max-w-sm rounded-lg">
+            <div class="flex flex-col items-center pb-10">
+              <img class="mb-3 rounded-full -lg" src="./img/cat-8.png" width="180" height="150" alt="Mayonnaise">
+              <h5 class="mb-1 text-lg font-bold text-black">Mayonnaise</h5>
+            </div>
+          </div>
+          <div class="w-full max-w-sm rounded-lg">
+            <div class="flex flex-col items-center pb-10">
+              <img class="mb-3 rounded-full -lg" src="./img/cat-9.png" width="180" height="150" alt="Mayonnaise">
+              <h5 class="mb-1 text-lg font-bold text-black">Mayonnaise</h5>
+            </div>
+          </div>
+          <div class="w-full max-w-sm rounded-lg">
+            <div class="flex flex-col items-center pb-10">
+              <img class="mb-3 rounded-full -lg" src="./img/cat-10.png" width="180" height="150" alt="Mayonnaise">
+              <h5 class="mb-1 text-lg font-bold text-black">Mayonnaise</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <!-- About  -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 py-20">
+    <div class="bg-white-500 p-10 m-5">
+      <h3 class="text-black bg-white p-4 mb-10 font-bold">About Us</h3>
+      <h1 class="text-amber-400 text-7xl font-bold">A FEW WORDS ABOUT US</h1>
+
+      <hr class="w-12 h-1 my-4 bg-amber-400 border-0 rounded md:my-10 dark:bg-amber-400">
+
+
+      
+      <p class="mb-10 mt-5 text-gray-800">Incorporated in the year <strong>2013,</strong> we <strong>“Tikks Industries”</strong> are engaged in <strong>manufacturing</strong> a superior quality range of <strong>Mayonnaise, Tomato Ketchup, Snack Sauce, Dark Soya Sauce, Red Chilli Sauce, Green Chilli Sauce,</strong> etc. These products are appreciated for their purity, longer shelf life and delicious taste.</p>
+      <button class="bg-amber-400 text-white p-4 mt-12 hover:bg-amber-500 ">-Read More About Us-</button>
+    </div>
+    <div class="bg-white-500 p-10">
+      <img src="./img/about_sec.jpg" alt="">
+      <p class="mt-10 text-gray-800">Under the leadership of our mentor <strong>“Mr. Vikramjit Singh”,</strong> we have been able to gain tremendous success in this domain.
+      </p>
+
+    </div>
+  </div>
+  
+   <!-- Product Items -->
+   <section class="mx-auto container">
+    <div class="py-10 text-center">
+      <h1 class="text-amber-400 font-bold  mb-10 my-20 text-3xl font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl">OUR PRODUCT ITEMS</h1>
+        <p class="w-3/4 md:w-3/4 xl:w-3/4 text-center mx-auto text-gray-800">With the assistance of our advanced production unit, we are occupied in manufacturing an optimum quality range of <strong>Mayonnaise, Tomato Ketchup, Snack Sauce, Dark Soya Sauce, Red Chilli Sauce, Green Chilli Sauce,</strong> etc. These products are prepared hygienically in our production unit by making use of high-quality ingredients, natural flavors, and preservatives. Our offered range of products is highly appreciated among our clients for purity, rich taste, high nutritional value, and longer shelf life. Besides, we provide our product range at affordable prices.</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-px">
+      <div class="p-10">
+        <img src="./img/product_item-1.jpg" alt=""  class="h-auto max-w-full">
+        <h1 class="text-black font-bold text-4xl text-center mt-5">Culinary Sauces</h1>
+        <p class="text-gray-800 text-center mt-5">Available Pack Size: 200g, 660g, 720g</p>
+      </div>
+      <div class="p-10">
+        <img src="./img/product_item-2.jpg" alt=""  class="h-auto max-w-full">
+        <h1 class="text-black font-bold text-4xl text-center mt-5">Fruit Jam</h1>
+        <p class="text-gray-800 text-center mt-5">Available Pack Size: 15g, 250g, 500g, 1kg, 5kg</p>
+      </div>
+      <div class="p-10">
+        <img src="./img/product_item-3.jpg" alt=""  class="h-auto max-w-full">
+        <h1 class="text-black font-bold text-4xl text-center mt-5">Mayonnaise</h1>
+        <p class="text-gray-800 text-center mt-5">Available Pack Size: 12g, 100g, 1kg</p>
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <button class="bg-amber-400 text-white p-4 mt-12 hover:bg-amber-500">-View More Products-</button>
+    </div>
+    
+   </section>
+
+   <!-- Reviews -->
+   <section class="py-20 container mx-auto bg-center bg-no-repeat bg-[url('https://www.tikksindia.com/wp-content/uploads/2020/01/foodtruck-sectionbg1.png')] bg-blend-multiply" >
+    <h1 class="text-center text-amber-400 font-bold md:text-7xl lg:text-7xl text-3xl mb-10">REVIEWS & RATING</h1>
+    <div class="flex justify-between mb-1 mx-10">
+      <span class="text-base font-medium  dark:text-black mb-2 sm:mb-0">Quality</span>
+      <span class="text-sm font-medium  dark:text-black">100%</span>
+    </div>
+    <div class=" bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mb-10 mx-10">
+      <div class="bg-amber-600 h-2.5 rounded-full" style="width: 100%"></div>
+    </div>
+    
+    <div class="flex justify-between mb-1 mx-10">
+      <span class="text-base font-medium  dark:text-black">Delivery</span>
+      <span class="text-sm font-medium  dark:text-black">100%</span>
+    </div>
+    <div class=" bg-gray-200 rounded-full h-2.5 dark:bg-gray-700 mb-10 mx-10">
+      <div class="bg-amber-600 h-2.5 rounded-full" style="width: 100%"></div>
+    </div>
+
+
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-x-px py-10 px-10">
+      <div class="p-4">
+        <h1 class="font-bold text-gray-600 mb-5">Product Name: Tomato Sauce <span class="text-gray-400 text-6xl">&#x201F;</span> </h1>
+        <div class="flex items-center mb-4 text-yellow-300 mb-5">
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+      </div>
+      <h1 class="mb-5">ARUN PATHANIA</h1>
+      <p class="text-gray-600 mb-5">Dehra Gopipur, Himachal Pradesh</p>
+      </div>
+
+
+      <div class="p-4">
+        <h1 class="font-bold text-gray-600 mb-5">Product Name: Tomato Sauce <span class="text-gray-400 text-6xl">&#x201F;</span> </h1>
+        <div class="flex items-center mb-4 text-yellow-300 mb-5">
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+      </div>
+      <h1 class="mb-5">ARUN PATHANIA</h1>
+      <p class="text-gray-600 mb-5">Dehra Gopipur, Himachal Pradesh</p>
+      </div>
+      <div class="p-4">
+        <h1 class="font-bold text-gray-600 mb-5">Product Name: Tomato Sauce <span class="text-gray-400 text-6xl">&#x201F;</span> </h1>
+        <div class="flex items-center mb-4 text-yellow-300 mb-5">
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+          <svg aria-hidden="true" class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
+      </div>
+      <h1 class="mb-5">ARUN PATHANIA</h1>
+      <p class="text-gray-600 mb-5">Dehra Gopipur, Himachal Pradesh</p>
+      </div>
+    </div>
+   </section>
+       
+
+ 
+   <section class="bg-white dark:bg-white">
+    <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+      <dl class="grid gap-6 md:gap-15 mx-auto text-gray-900 sm:grid-cols-2 md:grid-cols-4 dark:text-white">
+        <div class="flex flex-col items-center justify-center">
+          <dt class="mb-2 text-3xl md:text-5xl lg:text-7xl font-extrabold text-amber-400">25+</dt>
+          <dd class="font-bold text-gray-500 dark:text-black">Food Products</dd>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <dt class="mb-2 text-3xl md:text-5xl lg:text-7xl font-extrabold text-amber-400">100</dt>
+          <dd class="font-bold text-gray-500 dark:text-black">Pure & Natural</dd>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <dt class="mb-2 text-3xl md:text-5xl lg:text-7xl font-extrabold text-amber-400">1,000+</dt>
+          <dd class="font-bold text-gray-500 dark:text-black">Happy Customers</dd>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <dt class="mb-2 text-3xl md:text-5xl lg:text-8xl font-extrabold text-amber-400">20+</dt>
+          <dd class="font-bold text-gray-500 dark:text-black">Cities We Serve</dd>
+        </div>
+      </dl>
+    </div>
+  </section>
+  
+
+   <!-- Contact -->
+   <section class="py-20 container mx-auto bg-center bg-no-repeat bg-[url('https://www.tikksindia.com/wp-content/uploads/2020/01/foodtruck-sectionbg1.png')] bg-blend-multiply">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 p-10">
+      <div class="container">
+        <div class="border-4 border-amber-400 px-10 py-5">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl text-center text-amber-400 font-bold">Contact Us</h1>
+        </div>
+        <div class="flex  items-center justify-center p-6">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-5 md:w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"></path>
+          </svg>
+          <h1 class="font-bold px-5 text-sm md:text-base text-center">Vikramjit Singh (Managing Director)</h1>
+        </div>
+        <div class="flex  items-center justify-center p-6">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-5 md:w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"></path>
+          </svg>
+          <h1 class="font-bold px-5 text-sm md:text-base text-center">Tikks Industries, Plot No. 6, New Mahavir Jain Industrial Complex, Tajpur Road, Ludhiana-141008 (Punjab) India</h1>
+        </div>
+        <div class="flex  items-center justify-center p-6">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-5 md:w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"></path>
+          </svg>
+          <h1 class="font-bold px-5 text-sm md:text-base text-center">+91-896-896-896-7</h1>
+        </div>
+        <div class="flex  items-center justify-center p-6">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="w-5 md:w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+          </svg>
+          <h1 class="font-bold px-5 text-sm md:text-base text-center">info@tikksindia.com</h1>
+        </div>
+      </div>
+      <div class="container">
+        <form>
+          <div class="mb-6">
+            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Name *</label>
+            <input type="text" id="name" class="bg-white border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full md:w-3/4 p-2.5" required>
+          </div>
+          <div class="mb-6">
+            <label for="mobile" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Mobile *</label>
+            <input type="tel" id="mobile" class="bg-white border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full md:w-3/4 p-2.5" required>
+          </div>
+          <div class="mb-6">
+            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Email</label>
+            <input type="email" id="email" class="bg-white border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full md:w-3/4 p-2.5" required>
+          </div>
+          <div class="mb-6">
+            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-black">Message</label>
+            <textarea id="message" class="bg-white border border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full md:w-3/4 p-2.5" rows="6" required></textarea>
+          </div>
+          <button type="submit" class="text-white bg-amber-400 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full md:w-auto px-5 py-2.5 text-center">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+   <!-- map -->
+<div class="">
+  <iframe class="w-full" height="404" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=1920&amp;height=404&amp;hl=en&amp;q=Tikks%20Industries,%20Plot%20No.%206,%20New%20Mahavir%20Jain%20Industrial%20Complex,%20Tajpur%20Road,%20Ludhiana-141008%20(Punjab)%20India%20Ludhiana+(Tikks%20Industries)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+</div>
+
+   <!-- footer -->
+   <section class="bg-black py-10">
+    <div class="flex justify-center items-center mb-10 p-10">
+      <img src="./img/tikks-logo-small.png" alt="">
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center container mx-auto px-10 p-10">
+      <div class="text-center mx-4 mb-8 md:mb-0 md:w-1/3">
+        <h1 class="text-amber-400">Contact Us</h1>
+        <p class="text-white">+91-896-896-896-7</p>
+        <p class="text-white">info@tikksindia.com</p>
+      </div>
+  
+      <div class="text-center mx-4 mb-8 md:mb-0 md:w-1/3">
+        <h1 class="text-amber-400">ADDRESS</h1>
+        <p class="text-white">Tikks Industries</p>
+        <p class="text-white text-center mx-auto">Plot No. 6, New Mahavir Jain Industrial <br> Complex, Tajpur Road, Ludhiana-141008 (Punjab) India</p>
+      </div>
+  
+      <div class="text-center mx-4 md:w-1/2">
+        <h1 class="text-amber-400">VISIT OUR SOCIAL MEDIA</h1>
+        <div class="flex justify-center ">
+          <img src="./img/instagram.png" alt="" width="50" height="50" class="mr-4">
+          <img src="./img/pngtree-facebook-icon-social-media-3d-png-image_8704803.png" alt="" width="50" height="50">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    
+    
+   </section>
+</main>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+    <script>
+      const navBtn = document.querySelector('#menu');
+const menuBar = document.querySelector('[role="menubar"]');
+
+navBtn.addEventListener('click', () => {
+  const isExpanded = JSON.parse(navBtn.getAttribute('aria-expanded'));
+  navBtn.setAttribute('aria-expanded', !isExpanded);
+  menuBar.classList.toggle('hidden');
+  menuBar.classList.toggle('flex');
+})
+    </script>
+    <script>
+      window.addEventListener('scroll', function () {
+        var navbar = document.getElementById('navbar');
+        if (window.scrollY > 0) {
+          navbar.classList.add('navbar-scroll');
+        } else {
+          navbar.classList.remove('navbar-scroll');
+        }
+      });
+    </script>
+    
+</body>
+</html>
