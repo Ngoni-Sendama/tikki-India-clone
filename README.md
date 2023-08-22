@@ -1,3 +1,3 @@
 # tikki-India-clone
 
-<img src="/path/to/img.jpg" alt="Alt text" title="Optional title">
+<img src="/img/Screenshot 2023-08-23 031916.png" alt="Alt text" title="Optional title">
